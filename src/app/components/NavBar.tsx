@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function NavBar(){
     return(
             <div style={{display:"flex", justifyContent:"center", fontSize:"24px", margin:"15px", fontWeight:"bold"}}>
