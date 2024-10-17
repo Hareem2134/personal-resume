@@ -25,3 +25,65 @@ body {
     text-wrap: balance;
   }
 }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom:  10px;
+}
+
+.name, .title {
+  text-align: center;
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.section-heading {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 0 40px;
+}
+
+a {
+  color: #0073a6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.centre {
+  text-align: center;
+}

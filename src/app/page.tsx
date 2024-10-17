@@ -1,101 +1,164 @@
-import Image from "next/image";
+import NavBar from "./components/NavBar";
+import "./globals.css";
+import Link from "next/link";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+export default function Home(){
+  return(
+    <>
+    <NavBar/>
+    <div className="container">
+      <h1 className="main-heading">Personal Resume</h1>
+      <h1 className="name"><strong>HAREEM FAROOQI</strong></h1>
+      <h2 className="title"><strong>Passionate Web Developer and Designer</strong></h2>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <section id="introduction" className="section">
+      <h2 className="section-heading"><strong>Introduction</strong></h2>
+      <p>Alhamdulillah I am a dedicated professional with experience in social media management, graphic design, video editing, and web development. 
+      I have collaborated with global clients like Dr. Quran (UK), HSH Clothing (Canada), Sheraz Properties (Dubai), and Ansaarullah (Pakistan) to create visually compelling content and manage impactful digital strategies.</p>
+      <br/>
+      <p>Alhamdulillah With a solid foundation in programming languages like C, C#, C++, Java, JavaScript, TypeScript, HTML, and CSS.
+      Currently, I am expanding my knowledge in generative AI and Cloud Computing to further enhance my skill set In Shaa Allah.</p>
+      <br/>
+      <p>Passionate about continuous learning, I aim to contribute my diverse expertise in web development, design, and social media management to deliver creative and effective solutions In Shaa Allah.</p>
+    </section>
+
+    <section id="contact" className="section">
+      <h2 className="section-heading"><strong>Contact</strong></h2>
+    <div className="centre">
+      <strong>
+      <p>Email: <a href="mailto:hareemfarooqi2134@gmail.com">hareemfarooqi2134@gmail.com</a></p>
+      <p>Phone: <a href="tel:+923242762668">+92 324 2762668</a></p>
+      <p>
+      <a href="https://www.linkedin.com/in/hareemfarooqi/">LinkedIn</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="https://github.com/Hareem2134">GitHub</a>&nbsp;|&nbsp;&nbsp;
+      <a href="https://www.instagram.com/HAREEM.FAROOQI">Instagram</a>
+      </p>
+      </strong>
     </div>
+
+    </section>
+
+    <section id="skills" className="section">
+      <h2 className="section-heading"><strong>Skills</strong></h2>
+      <p>
+        <strong>Programming Languages:</strong> C, C#, C++, Java, JavaScript, TypeScript, HTML, CSS
+      </p>
+      <p>
+        <strong>Web Development:</strong> DreamWeaver, Wordpress, React.js, Next.js
+      </p>
+      <p>
+        <strong>Design:</strong> Photoshop, Illustrator, Premiere Pro
+      </p>
+      <p>
+        <strong>Social Media Management:</strong> Instagram, Facebook, TikTok, YouTube, Pinterest, X
+      </p>
+      <p>
+        <strong>3D Game Development:</strong> Unity3D, Unreal Engine
+      </p>
+      <p>
+        <strong>Android App Development</strong>
+      </p>
+      <p>
+        <strong>Digital Marketing</strong>
+      </p>
+      <p>
+        <strong>Android App Development</strong>
+      </p>
+      <p>
+        <strong>Photography</strong>
+      </p>
+      <p>
+        <strong>Branding</strong>
+      </p>
+    </section>
+
+    <section id="education" className="section">
+      <h2 className="section-heading"><strong>Education</strong></h2>
+      <p>
+        <strong>Bachelor in Computer Science</strong>
+      </p>
+      <p>
+        UBIT KARACHI UNIVERSITY 2014- 2017
+      </p>
+      <p>
+        <strong>Web Development</strong>
+      </p>
+      <p>
+        MEMON FOUNDATION 2014
+      </p>
+      <p>
+        <strong>Graphic Designing</strong>
+      </p>
+      <p>
+        MEMON FOUNDATION 2014
+      </p>
+      <p>
+        <strong>Video Editing</strong>
+      </p>
+      <p>
+        MEMON FOUNDATION 2014
+      </p>
+      <p>
+        <strong>Android App Development</strong>
+      </p>
+      <p>
+        SIR SYED UNIVERSITY 2016
+      </p>
+      <p>
+        <strong>Game Development</strong>
+      </p>
+      <p>
+        Software House 2016
+      </p>
+      <p>
+        <strong>Linux Fundamentals</strong>
+      </p>
+      <p>
+        NED UNIVERSITY 2016
+      </p>
+      <p>
+        <strong>Generative AI & Cloud Computing</strong>
+      </p>
+      <p>
+        Currently - 2026 In Shaa Allah
+      </p>
+    </section>
+
+    <section id="experience" className="section">
+      <h2 className="section-heading"><strong>Experience</strong></h2>
+      <p>
+        <strong>Dr. Quran (UK)</strong> - Social Media Manager, Web Developer
+      </p>
+      <p>
+        <strong>HSH Clothing (Canada)</strong> - Social Media Manager, Web Developer
+      </p>
+      <p>
+        <strong>Sheraz Properties (Dubai)</strong> - Social Media Manager
+      </p>
+      <p>
+        <strong>Ansaarullah (Pakistan)</strong> - Web Developer
+      </p>
+    </section>
+
+    <section id="portfolio" className="section">
+      <h2 className="section-heading"><strong>Portfolio</strong></h2>
+      <div className="centre">
+        <strong>
+       <Link href="https://drive.google.com/drive/folders/1z4Oo_rf5O914FWhMoPjAeBm9Pv4jlrAJ">Video Production</Link>&nbsp;&nbsp;|&nbsp;&nbsp;
+       <Link href="https://drive.google.com/drive/folders/1_6VlP8Cjb3RTyzXglEuY5bLnVaO64o8-">Graphic Designing</Link>&nbsp;&nbsp;|&nbsp;&nbsp;
+       <Link href="https://drive.google.com/drive/folders/1Ak6Hb04BLqP5DInxXoU38UPo9rjQUFad">Youtube Reels</Link>&nbsp;&nbsp;|&nbsp;&nbsp;
+       <Link href="https://drive.google.com/drive/folders/178O2t94ZXzc3ECMkjkHMXuAagIgX2e8-">Video Editing</Link>
+       </strong>
+       </div>
+    </section>
+
+    </div>
+
+    <footer className="footer">
+    <p>© 2024 Hareem. All Rights Reserved.</p>
+    </footer>
+
+    </>
   );
 }
+
